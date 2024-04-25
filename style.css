@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /********** NAVBAR SECTION **********/
@@ -27,6 +28,15 @@ nav {
 .nav-container a {
   color: #333;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-container button {
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
   font-size: 15px;
   font-weight: 600;
 }
@@ -54,6 +64,7 @@ nav {
   background: #043b9c;
   color: #fff;
   border: none;
+  cursor: pointer;
   padding: 10px 20px;
   border-radius: 25px;
 }

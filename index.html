@@ -11,17 +11,19 @@
     <!--Navbar-->
     <nav>
       <div class="nav-container">
-        <h1>Enterprise</h1>
+        <a href="/index.html">
+          <h1>Enterprise</h1>
+        </a>
 
         <div class="nav-links">
-          <a href="#">Pricing</a>
-          <a href="#">Features</a>
+          <button class="pricing-btn">Pricing</button>
+          <button class="features-btn">Features</button>
           <a href="#">About</a>
         </div>
       </div>
       <div class="buttons">
-        <a id="contact-btn">Contact</a>
-        <button id="purchase-btn">Buy Now</button>
+        <a href="mailto:test@example.com" id="contact-btn">Contact</a>
+        <button class="pricing-btn" id="purchase-btn">Buy Now</button>
       </div>
       <img
         class="mobile-menu-icon"
@@ -36,14 +38,14 @@
     <div class="hero">
       <div class="hero-container">
         <div class="hero-text">
-          <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+          <h2>Next-Level Website Hosting: VPS Plans Tailored for You</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quibusdam quia quos
+            Get the reliability and performance your website deserves with our
+            feature-rich VPS hosting plans, backed by 24/7 expert support.
           </p>
           <div class="hero-buttons">
-            <button>Learn More</button>
-            <button>Learn More</button>
+            <button class="pricing-btn">Choose Plan</button>
+            <button class="features-btn">More Info</button>
           </div>
         </div>
 
@@ -79,32 +81,35 @@
       <div class="features-cards">
         <div class="features-card">
           <div class="card-icon">
-            <i data-feather="activity" color="gray"></i>
+            <i data-feather="zap" color="#043b9c"></i>
           </div>
-          <p class="card-title">Activity</p>
+          <p class="card-title">High Performance Infrastructure</p>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quibusdam quia quos
+            Experience blazing-fast website loading times with our
+            high-performance infrastructure, ensuring your visitors stay engaged
+            and satisfied.
           </p>
         </div>
         <div class="features-card">
           <div class="card-icon">
-            <i data-feather="anchor" color="gray"></i>
+            <i data-feather="shield" color="#043b9c"></i>
           </div>
-          <p class="card-title">Activity</p>
+          <p class="card-title">Robust Security Measures</p>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quibusdam quia quos
+            Rest easy knowing your website is protected by our robust security
+            measures, including advanced firewalls, DDoS protection, and regular
+            security updates.
           </p>
         </div>
         <div class="features-card">
           <div class="card-icon">
-            <i data-feather="archive" color="gray"></i>
+            <i data-feather="heart" color="#043b9c"></i>
           </div>
-          <p class="card-title">Activity</p>
+          <p class="card-title">Scalability & Flexibility</p>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quibusdam quia quos
+            Scale your website effortlessly as your business grows with our
+            flexible VPS hosting solutions, allowing you to adapt to changing
+            demands without missing a beat.
           </p>
         </div>
       </div>
@@ -244,14 +249,14 @@
     <footer>
       <h2>Enterprise</h2>
       <div class="footer-links">
-        <a href="#">Pricing</a>
-        <a href="#">Features</a>
-        <a href="#">About</a>
+        <a class="pricing-btn">Pricing</a>
+        <a class="features-btn">Features</a>
+        <a href="/about.html">About</a>
       </div>
       <div class="contacts">
         <a href="tel:+112345678">
-            <i data-feather="phone"></i> <span>+1 123 456 78</span>
-          </a>
+          <i data-feather="phone"></i> <span>+1 123 456 78</span>
+        </a>
         <a href="mailto:test@example.com">
           <i data-feather="mail"></i> <span>test@example.com</span>
         </a>
@@ -272,5 +277,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
