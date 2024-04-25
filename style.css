@@ -25,6 +25,10 @@ nav {
   align-items: center;
 }
 
+.nav-container .brand{
+    z-index: 999;
+}
+
 .nav-container a {
   color: #333;
   text-decoration: none;
@@ -73,6 +77,37 @@ nav {
   display: none;
 }
 
+#mobile-menu {
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+}
+
+#mobile-menu a {
+  color: #333;
+  font-size: 36px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#mobile-menu button {
+  color: #333;
+  font-size: 36px;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
   nav {
     padding: 1.6rem 2rem;
@@ -94,6 +129,7 @@ nav {
     display: block;
     width: 30px;
     cursor: pointer;
+    z-index: 999;
   }
 }
 
@@ -479,3 +515,118 @@ footer .contacts a {
 }
 
 /********** FOOTER SECTION **********/
+
+/********** ABOUT SECTION **********/
+
+#about {
+  width: 100%;
+  padding: 3rem 4rem;
+}
+
+.about-container {
+  margin: 0rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-container img {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  width: 45%;
+}
+
+.about-text p {
+  color: #333;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 800px) {
+  .about-text {
+    width: 100%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    margin: 1.6rem;
+  }
+}
+
+/********** ABOUT SECTION **********/
+
+/********** INFO SECTION **********/
+
+.info {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 6rem 4rem 16rem 4rem;
+  background-image: url("assets/cloud-banner.svg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-text {
+  font-size: 2.5em;
+  color: #4a4a4a;
+  font-weight: 300;
+  font-family: "Merriweather", serif;
+  width: 45%;
+}
+
+.info-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.info-box h3 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 600;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .info {
+    padding: 3rem 2rem;
+  }
+
+  .info-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/********** INFO SECTION **********/

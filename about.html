@@ -5,33 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Enterprise Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!--Navbar-->
     <nav>
       <div class="nav-container">
-        <a href="/index.html">
+        <a class="brand" href="/index.html">
           <h1>Enterprise</h1>
         </a>
 
         <div class="nav-links">
           <button class="pricing-btn">Pricing</button>
           <button class="features-btn">Features</button>
-          <a href="#">About</a>
+          <a href="/about.html">About</a>
         </div>
       </div>
       <div class="buttons">
         <a href="mailto:test@example.com" id="contact-btn">Contact</a>
-        <button class="purchase-btn" id="purchase-btn">Buy Now</button>
+        <button class="pricing-btn" id="purchase-btn">Buy Now</button>
       </div>
       <img
         class="mobile-menu-icon"
+        id="mobile-menu-icon"
         src="/assets/hamburger-icon.png"
         alt="hamburger-menu"
       />
+      <div id="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <button class="pricing-btn">Pricing</button>
+        <button class="features-btn">Features</button>
+      </div>
     </nav>
     <!--Navbar-->
 
+    <!--About-->
+
+    <div class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Why Choose us?</h2>
+          <p>
+            We are a leading provider of web hosting services, offering a range
+            of hosting plans to suit the needs of businesses of all sizes. Our
+            VPS hosting plans are designed to provide the reliability and
+            performance your website needs, with 24/7 expert support to help you
+            get the most out of your hosting experience.
+          </p>
+        </div>
+        <img src="/assets/vps.jpg" alt="vps" />
+      </div>
+    </div>
+
+    <!--About-->
+
+    <!--Companies-->
+
+    <div id="companies">
+      <div class="companies-container">
+        <div class="company-logos">
+          <img src="/assets/logo3.jpg" alt="company-logo" />
+          <img src="/assets/logo1.png" alt="company-logo" />
+          <img src="/assets/logo4.png" alt="company-logo" />
+          <img src="/assets/logo5.png" alt="company-logo" />
+          <img src="/assets/logo2.svg" alt="company-logo" />
+        </div>
+      </div>
+    </div>
+
+    <!--Companies-->
+
+    <!--About 2-->
+
+    <div class="info">
+      <h3 class="info-text">
+        Host your business with zero downtime with
+        <b>our reliable hosting service</b>!
+      </h3>
+      <div class="info-box">
+        <h3>Our hosting service gives you:</h3>
+        <ul>
+          <li>
+            <i data-feather="check" color="green"></i>
+            <span>Unlimited Storage</span>
+          </li>
+          <li>
+            <i data-feather="check" color="green"></i>
+            <span>24/7 Support</span>
+          </li>
+          <li>
+            <i data-feather="check" color="green"></i>
+            <span>99.9% Uptime Guarantee</span>
+          </li>
+          <li>
+            <i data-feather="check" color="green"></i>
+            <span>Free SSL Certificate</span>
+          </li>
+          <li>
+            <i data-feather="check" color="green"></i>
+            <span>Free Domain Name</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--About 2-->
+
+    <!--Footer-->
+
+    <footer>
+      <h2>Enterprise</h2>
+      <div class="footer-links">
+        <a class="pricing-btn">Pricing</a>
+        <a class="features-btn">Features</a>
+        <a href="/about.html">About</a>
+      </div>
+      <div class="contacts">
+        <a href="tel:+112345678">
+          <i data-feather="phone"></i> <span>+1 123 456 78</span>
+        </a>
+        <a href="mailto:test@example.com">
+          <i data-feather="mail"></i> <span>test@example.com</span>
+        </a>
+      </div>
+      <div class="socials">
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="linkedin"></i></a>
+      </div>
+      <div class="address">
+        <p>1234 Street Name, City Name, United States</p>
+      </div>
+    </footer>
+
+    <!--Footer-->
+
+    <script>
+      feather.replace();
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
